@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Tour Ghibli Fantasy </title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Be+Vietnam+Pro:wght@300;600&display=swap&subset=vietnamese" rel="stylesheet">
+  <link rel="stylesheet" href="ghiblistyle.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="effect.js"></script>
+</head>
+<body>
+  <div class="controls">
+   <button id="musicBtn" onclick="toggleMusic()">🎵 Bật/Tắt nhạc</button>
+   <audio id="music" src="music/ponyo.mp3"></audio>
+  </div>
+  <script>
+  const audio = document.getElementById('music');
+  function toggleMusic() {
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+  </script>
+ <section class="hero-ghibli">
+  <div class="text-box">
+    <h1>Welcome To The<br><span>Ghibli Fantasy Tour</span></h1>
+    <p>
+      Hành trình bước vào những thế giới nhiệm màu của Studio Ghibli.<br>
+      Từ Totoro, Ponyo, đến lâu đài bay Laputa – mọi phép màu đều chờ bạn!
+    </p>
+    <div class="form-row">
+      <a href="#book" class="btn primary">🍃 Đăng ký ngay</a>
+      <a href="#itinerary" class="btn schedule">🕰️ Xem lịch trình</a>
+    </div>
+  </div>
+
+  <div class="image-box">
+    <img src="images/ghibliworld.jpg" alt="Ghibli Fantasy World">
+    <div class="ticket">🎫 Dream Pass</div>
+    <div class="camera">🍃 Explore the Magic</div>
+  </div>
+</section>
+
+  <!-- Overview / Features -->
+  <section id="overview" class="overview">
+    <h2>Những trải nghiệm nổi bật</h2>
+    <ul class="features">
+      <li>🐾 Chuyến Xe Buýt Mèo xuyên rừng</li>
+      <li>🌊 Lặn khám phá Thành phố Dưới Biển của Ponyo</li>
+      <li>🍂 Thu nhỏ & khám phá cùng Arrietty</li>
+      <li>🎩 Gặp Baron trong buổi Tiệc Trà Hoàng Gia của The Cat Returns</li>
+      <li>☁️ Đi tàu Laputa & nghe "Carrying You"</li>
+    </ul>
+  </section>
+
+  <!-- Itinerary -->
+  <section id="itinerary" class="itinerary">
+    <h2>🕰️ Lịch trình chi tiết</h2>
+
+    <!-- Day 1 -->
+    <article class="day">
+      <h3 class="ten">🌿 Ngày 1 — Cánh cổng đến thế giới Ghibli</h3>
+      <div class="mota">
+      <div class="time-item"><strong>07:00</strong> — Ga Linh Hồn: Totoro đón khách bằng chiếc lá khổng lồ.</div>
+      <div class="time-item"><strong>08:30</strong> — Xe Buýt Mèo đến Ngôi Nhà Di Động của Howl (khám phá phòng đa chiều).</div>
+      <div class="time-item"><strong>11:00</strong> — Workshop “Bùa Bay của Kiki”.</div>
+      <div class="time-item"><strong>13:00</strong> — Bữa trưa tại Quán Ăn của Yubaba (bánh bao linh hồn & trà tinh linh).</div>
+      <div class="time-item"><strong>18:00</strong> — Dạo rừng cùng Totoro, ngắm đom đóm.</div>
+      <div class="time-item"><strong>20:30</strong> — Nghỉ đêm trong Phòng Phép Thuật của Howl.</div>
+      </div>
+    </article>
+
+    <!-- Day 2 -->
+    <article class="day">
+      <h3 class="ten">🌊 Ngày 2 — Lặn xuống đại dương của Ponyo</h3>
+      <div class="mota">
+      <div class="time-item"><strong>07:00</strong> — Lên tàu bong bóng nước, Ponyo dẫn đường.</div>
+      <div class="time-item"><strong>09:00</strong> — Tham quan Thành phố Dưới Biển (san hô biết hát).</div>
+      <div class="time-item"><strong>12:00</strong> — Bữa trưa: Ramen của Sousuke.</div>
+      <div class="time-item"><strong>15:00</strong> — Trò chơi “Cưỡi Sóng Ma Thuật”.</div>
+      <div class="time-item"><strong>19:00</strong> — Lễ hội Sao Biển Phát Sáng.</div>
+      <div class="time-item"><strong>22:00</strong> — Nghỉ trong Bong Bóng Mơ (khách sạn nổi).</div>
+      </div>
+    </article>
+
+    <!-- Day 3 -->
+    <article class="day">
+      <h3 class="ten">🍂 Ngày 3 — Arrietty & Vương Quốc Mèo (The Cat Returns)</h3>
+      <div class="mota">
+      <div class="time-item"><strong>07:30</strong> — Thu nhỏ cơ thể bằng “Bụi Phép Giảm Kích Thước”.</div>
+      <div class="time-item"><strong>09:00</strong> — Workshop “Mượn Vật Dụng” (kỹ năng Borrower).</div>
+      <div class="time-item"><strong>11:30</strong> — Mini picnic tí hon.</div>
+      <div class="time-item"><strong>14:00</strong> — Di chuyển bằng Xe Buýt Mèo đến Vương Quốc Mèo.</div>
+      <div class="time-item"><strong>15:30</strong> — Tiệc Trà Hoàng Gia (gặp Baron & công chúa Haru).</div>
+      <div class="time-item"><strong>18:00</strong> — Dạo phố mèo & thưởng thức nhạc hoàng gia.</div>
+      <div class="time-item"><strong>21:00</strong> — Nghỉ đêm tại Lâu đài Mèo.</div>
+      </div>
+    </article>
+
+    <!-- Day 4 -->
+    <article class="day">
+      <h3 class="ten">☁️ Ngày 4 — Bay về Lâu đài Trên Mây</h3>
+      <div class="mota">
+      <div class="time-item"><strong>08:00</strong> — Tàu Laputa khởi hành, gặp robot trồng hoa.</div>
+      <div class="time-item"><strong>10:30</strong> — Ghi lời chúc vào “Sổ Ký Ức Ghibli”.</div>
+      <div class="time-item"><strong>13:00</strong> — Mua quà tại Chợ Gió & Ánh Sáng.</div>
+      <div class="time-item"><strong>15:00</strong> — Cổng Gió mở, Totoro tiễn khách, tặng hạt giống phép thuật.</div>
+      </div>
+    </article>
+
+    <div class="note">
+      <h4>💼 Ghi chú:</h4>
+      <p>Mang theo áo ấm nhẹ, giày thoải mái. Trải nghiệm các hoạt động có thể thay đổi theo điều kiện thời tiết phép thuật. Mỗi du khách sẽ được cấp “Meow Pass” & “Ghibli Passport”.</p>
+      <p>
+        🐱 <strong>Lưu ý đặc biệt:</strong> Nên học vài câu tiếng mèo kêu cơ bản để giao tiếp trong Vương Quốc Mèo! <br>
+        Ví dụ: “Nyaa~!” (Xin chào), “Mrrr~” (Cảm ơn).
+      </p>
+      <h4 class="ten">Video hướng dẫn: (Nhấp vào đây) </h4>
+      <div class="mota">
+      <div class="video-wrapper">
+        <video controls>
+          <source src="videos/catlanguage.mp4" type="video/mp4">
+        </video>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="book" class="booking">
+    <h2>Đăng ký & Thông tin</h2>
+    <p>Vé giới hạn. Liên hệ để biết lịch khởi hành tiếp theo.</p>
+    <form class="booking-form" onsubmit="event.preventDefault(); alert('Cảm ơn! Chúng tôi sẽ liên hệ bạn sớm.');">
+      <label>Họ và tên <input type="text" required placeholder="Nguyễn Văn A" /></label>
+      <label>Email <input type="email" required placeholder="email@vd.com" /></label>
+      <label>Số điện thoại <input type="tel" required placeholder="+84 9..." /></label>
+      <label>Ghi chú (tùy chọn) <textarea placeholder="Bạn muốn chỗ gần cửa sổ, ăn chay..."></textarea></label>
+
+      <div class="form-row">
+        <button class="btn primary" type="submit">🍃 Đăng ký — 5 000 USD</button>
+        <button class="btn ghost" type="reset">🔄 Làm lại</button>
+      </div>
+    </form>
+  </section>
+
+</body>
+</html>
