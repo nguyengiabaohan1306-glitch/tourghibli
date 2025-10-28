@@ -120,8 +120,12 @@ body {
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 0 20px rgba(80, 140, 100, 0.2);
+  animation: fadeIn 1s ease-in;
 }
-
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
 .overview h2,
 .itinerary h2 {
   color: #2f6a4a;
